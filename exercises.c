@@ -55,7 +55,8 @@ int *filterEvenNumbers(int arr[], int size, int *newSize) {
         count++;
       }
     }
-  return NULL; 
+  *newSize = count;
+  return arr2; 
 }
 
 /*
