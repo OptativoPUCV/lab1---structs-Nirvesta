@@ -248,3 +248,14 @@ test.c:411: error: expected ‘{’ at end of input
 cc1: all warnings being treated as errors
 Compilation failed
 9a11f1d
+Thu 14 Mar 2024 03:11:20 PM UTC: 
+ exercises.c | 4 ++--
+ 1 file changed, 2 insertions(+), 2 deletions(-)
+In file included from test.c:1:
+exercises.c: In function ‘reverseArray’:
+exercises.c:29:7: error: variable ‘temp’ set but not used [-Werror=unused-but-set-variable]
+   29 |   int temp;
+      |       ^~~~
+cc1: all warnings being treated as errors
+Compilation failed
+0de4b59
