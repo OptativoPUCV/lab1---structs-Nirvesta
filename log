@@ -293,3 +293,14 @@ Thu 14 Mar 2024 03:15:22 PM UTC:
  tests:  0|6
 total_score: 10/70
 76f9654
+Thu 14 Mar 2024 03:15:57 PM UTC: 
+ exercises.c | 1 +
+ 1 file changed, 1 insertion(+)
+In file included from test.c:1:
+exercises.c: In function ‘reverseArray’:
+exercises.c:34:27: error: ‘temp’ undeclared (first use in this function)
+   34 |       arr[size - 1 - i] = temp;
+      |                           ^~~~
+exercises.c:34:27: note: each undeclared identifier is reported only once for each function it appears in
+Compilation failed
+6178fcc
