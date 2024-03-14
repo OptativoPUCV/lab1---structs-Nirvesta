@@ -316,3 +316,14 @@ Thu 14 Mar 2024 03:17:05 PM UTC:
  tests:  0|5
 total_score: 20/70
 afdfeb5
+Thu 14 Mar 2024 03:19:03 PM UTC: 
+ exercises.c | 6 +++++-
+ 1 file changed, 5 insertions(+), 1 deletion(-)
+In file included from test.c:1:
+exercises.c: In function ‘filterEvenNumbers’:
+exercises.c:47:8: error: unused variable ‘arr2’ [-Werror=unused-variable]
+   47 |   int *arr2 = malloc(sizeof(int) * size);
+      |        ^~~~
+cc1: all warnings being treated as errors
+Compilation failed
+36af6ef
