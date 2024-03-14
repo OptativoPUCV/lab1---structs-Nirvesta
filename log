@@ -270,3 +270,14 @@ exercises.c:29:7: error: variable ‘temp’ set but not used [-Werror=unused-bu
 cc1: all warnings being treated as errors
 Compilation failed
 6ee49ad
+Thu 14 Mar 2024 03:14:44 PM UTC: 
+ exercises.c | 1 +
+ 1 file changed, 1 insertion(+)
+In file included from test.c:1:
+exercises.c: In function ‘reverseArray’:
+exercises.c:29:7: error: variable ‘temp’ set but not used [-Werror=unused-but-set-variable]
+   29 |   int temp = 0;
+      |       ^~~~
+cc1: all warnings being treated as errors
+Compilation failed
+95d5bbf
