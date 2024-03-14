@@ -304,3 +304,9 @@ exercises.c:34:27: error: ‘temp’ undeclared (first use in this function)
 exercises.c:34:27: note: each undeclared identifier is reported only once for each function it appears in
 Compilation failed
 6178fcc
+Thu 14 Mar 2024 03:16:13 PM UTC: 
+ exercises.c | 4 ++--
+ 1 file changed, 2 insertions(+), 2 deletions(-)
+ tests:  0|6
+total_score: 10/70
+32bdb0c
