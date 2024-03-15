@@ -125,12 +125,12 @@ int checkSorted(int arr[], int size) {
       }
     }
 
-  if (contup == size)
+  if (contup == size - 1)
   {
     return 1;
   }
 
-  else if (contdown == size)
+  else if (contdown == size - 1)
   {
     return -1;
   }
