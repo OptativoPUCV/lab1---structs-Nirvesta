@@ -106,37 +106,38 @@ y luego devuelva 1 si el arreglo está ordenado en orden ascendente,
 */
 int checkSorted(int arr[], int size) { 
     if (size <= 1) {
-        return 1; 
+        return 1; // Un arreglo de tamaño 0 o 1 se considera ordenado
     }
 
     int ascen = arr[0];
-    int contup = 1; 
+    int contup = 1; // Inicializamos el contador en 1
     int desce = arr[0];
-    int contdown = 1; 
+    int contdown = 1; // Inicializamos el contador en 1
 
     for (int i = 1; i < size; i++) {
         if (arr[i] >= ascen) { 
             ascen = arr[i];
             contup++;
         } else {
-            break; 
+            break; // Si encuentra un elemento menor, no está ordenado en ascendente
         }
 
         if (arr[i] <= desce) {
             desce = arr[i];
             contdown++;
         } else {
-            break; 
+            // Si encuentra un elemento mayor, el arreglo no está ordenado en descendente
+            return 0;
         }
     }
 
     if (contup == size) {
-        return 1; 
+        return 1; // El arreglo está ordenado en ascendente
     } else if (contdown == size) {
-        return -1; 
+        return -1; // El arreglo está ordenado en descendente
     }
 
-    return 0; 
+    return 0; // El arreglo no está ordenado
 }
 
 
