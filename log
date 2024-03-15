@@ -409,3 +409,26 @@ Fri 15 Mar 2024 02:43:47 AM UTC:
  tests:  0|3
 total_score: 40/70
 5129999
+Fri 15 Mar 2024 02:56:54 AM UTC: 
+ exercises.c | 25 +++++++++++++++++++++++--
+ 1 file changed, 23 insertions(+), 2 deletions(-)
+In file included from test.c:1:
+exercises.c: In function ‘checkSorted’:
+exercises.c:115:7: error: this ‘if’ clause does not guard... [-Werror=misleading-indentation]
+  115 |       if (arr[i] > ascen)
+      |       ^~
+exercises.c:117:9: note: ...this statement, but the latter is misleadingly indented as if it were guarded by the ‘if’
+  117 |         contup++;
+      |         ^~~~~~
+exercises.c:119:7: error: ‘else’ without a previous ‘if’
+  119 |       else if (arr[i] < desce)
+      |       ^~~~
+exercises.c:119:12: error: this ‘if’ clause does not guard... [-Werror=misleading-indentation]
+  119 |       else if (arr[i] < desce)
+      |            ^~
+exercises.c:121:9: note: ...this statement, but the latter is misleadingly indented as if it were guarded by the ‘if’
+  121 |         contdown++;
+      |         ^~~~~~~~
+cc1: all warnings being treated as errors
+Compilation failed
+797e556
