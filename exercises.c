@@ -112,13 +112,17 @@ int checkSorted(int arr[], int size) {
   
   for (int i = 0; i < size; i++)
     {
-      if (arr[i] > ascen)
+      if (arr[i] > ascen)  
+      { 
         ascen = arr[i];
         contup++;
+      }
 
       else if (arr[i] < desce)
+      {
         desce = arr[i];
         contdown++;
+      }
     }
 
   if (contup == size)
