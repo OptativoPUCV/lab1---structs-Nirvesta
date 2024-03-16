@@ -555,3 +555,13 @@ exercises.c:163:18: error: incompatible types when assigning to type ‘Autor’
       |                  ^~~~~~~~~~~~~~
 Compilation failed
 d12ec66
+Sat 16 Mar 2024 03:58:42 AM UTC: 
+ exercises.c | 4 ++--
+ 1 file changed, 2 insertions(+), 2 deletions(-)
+In file included from test.c:1:
+exercises.c: In function ‘inicializarLibro’:
+exercises.c:163:23: error: assignment to expression with array type
+  163 |   libro->autor.nombre = anioNacimiento;
+      |                       ^
+Compilation failed
+3ee7c90
