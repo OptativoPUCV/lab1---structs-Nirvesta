@@ -486,3 +486,13 @@ Fri 15 Mar 2024 03:10:28 AM UTC:
  tests:  0|3
 total_score: 40/70
 45bae98
+Sat 16 Mar 2024 03:26:27 AM UTC: 
+ exercises.c | 35 ++++++++++++++++-------------------
+ 1 file changed, 16 insertions(+), 19 deletions(-)
+In file included from test.c:1:
+exercises.c: In function ‘checkSorted’:
+exercises.c:113:16: error: expected expression before ‘;’ token
+  113 |   for (int i = ; i < size; i++)
+      |                ^
+Compilation failed
+faa1038
