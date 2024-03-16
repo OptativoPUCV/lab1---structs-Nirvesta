@@ -532,3 +532,26 @@ Sat 16 Mar 2024 03:53:39 AM UTC:
  tests:  0|1
 total_score: 60/70
 34dd3fa
+Sat 16 Mar 2024 03:56:03 AM UTC: 
+ exercises.c | 4 ++--
+ 1 file changed, 2 insertions(+), 2 deletions(-)
+In file included from test.c:1:
+exercises.c: In function ‘inicializarLibro’:
+exercises.c:162:15: error: incompatible type for argument 1 of ‘strcpy’
+  162 |   strcpy(libro->autor, nombreAutor);
+      |          ~~~~~^~~~~~~
+      |               |
+      |               Autor
+In file included from /nix/store/4pqv2mwdn88h7xvsm7a5zplrd8sxzvw0-glibc-2.35-163-dev/include/features.h:490,
+                 from /nix/store/4pqv2mwdn88h7xvsm7a5zplrd8sxzvw0-glibc-2.35-163-dev/include/ctype.h:25,
+                 from exercises.c:1,
+                 from test.c:1:
+/nix/store/4pqv2mwdn88h7xvsm7a5zplrd8sxzvw0-glibc-2.35-163-dev/include/bits/string_fortified.h:77:1: note: expected ‘char * restrict’ but argument is of type ‘Autor’
+   77 | __NTH (strcpy (char *__restrict __dest, const char *__restrict __src))
+      | ^~~~~
+In file included from test.c:1:
+exercises.c:163:18: error: incompatible types when assigning to type ‘Autor’ from type ‘int’
+  163 |   libro->autor = anioNacimiento;
+      |                  ^~~~~~~~~~~~~~
+Compilation failed
+d12ec66
